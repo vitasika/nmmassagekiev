@@ -10,9 +10,12 @@
 
     @media screen and (min-width: 480px) {}
 
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1280px) {}
+    @media screen and (max-width: 767px) {
+    }
+    
+    @media screen and (min-width: 768px) {
+        flex-direction: row;        
+    }
 }
 
 .about_title {
@@ -74,7 +77,9 @@
 
     @media screen and (min-width: 480px) {}
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        
+    }
 
     @media screen and (min-width: 1280px) {
         width: 500px;
