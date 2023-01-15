@@ -5,7 +5,7 @@ skonfigurowania dodatkowych opcji [zobacz dokumentację](https://parceljs.org/)
 
 ## Przygotowanie nowego projektu
 
-1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js.
+1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js
    [Ściągnij i zainstaluj](https://nodejs.org/en/), jeśli jest taka potrzeba.
 2. Sklonuj to repozytorium.
 3. Zmień nazwę folderu z `parcel-project-template` na nazwę swojego projektu.
