@@ -1,0 +1,58 @@
+.master{
+  padding: 30px 0;
+}
+
+.master__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.master__position {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.master__list{
+  width: 350px;
+  box-shadow: 0 24px 64px rgb(0 0 0 / 10%);
+}
+
+.master__list:focus, .master__list:hover{
+  transform: scale(1.02);
+  transition: all 750ms ease;
+  box-shadow: 0 14px 44px rgb(0 0 0 / 20%);
+
+}
+
+// .master__position > li {
+// }
+
+.master__position > li > div {
+  padding: 15px;
+}
+
+.master__img {
+  margin-bottom: 20px;
+}
+
+.master__name {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #273574;
+}
+
+.master__description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #273574;
+}

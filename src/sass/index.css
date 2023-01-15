@@ -1,0 +1,93 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.schedule {
+  padding: 240px 0 100px;
+  background-image: url(../images/schedule/schedule.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.schedule__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.schedule__title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ced4ee;
+  line-height: 70px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.schedule__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ced4ee;
+  width: 410px;
+  height: 160px;
+  background: rgba(249, 246, 241, 0.5);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.schedule__info::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #ced4ee;
+  background-color: transparent;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  background-color: #ced4ee;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,28 @@
+:root {
+  --first-bg-color: #ced4ee;
+  --second-bg-color: ;
+  --additional-bg-color: ;
+  --primary-text-color: #000;
+  --second-text-color: #fff;
+  --btn-bg-color: #0b79c8;
+  --btn-primary-text-color: #fff;
+  --btn-second-text-color: #000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.37;
+  background-color: var(--first-bg-color);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}

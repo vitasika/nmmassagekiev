@@ -1,0 +1,41 @@
+.header-list {
+    display: flex;
+    justify-content: space-evenly;
+    // padding: 20px 0;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        align-items: center;
+    }
+}
+
+.header-list__link {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    color: #0b79c8;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    cursor: pointer;
+
+    &:hover, &:focus{
+        color: #000;
+    }
+}
+
+.mobilmenu{
+    
+    @media screen and (max-width: 767px) {
+        
+    }
+
+    @media screen and (min-width: 768px) {        
+        display: none;
+    }
+}
