@@ -1,0 +1,298 @@
+/*------------------ modal window ------------------*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px 40px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%) scale(1);
+    transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+
+    @media screen and (max-width: 479px) {
+        min-width: 320px;
+        min-height: 609px;
+    }
+
+    @media screen and (min-width: 480px) {
+        min-width: 450px;
+        min-height: 609px;
+    }
+}
+
+//   .modal__closed{
+//     padding: 0;
+//     border: none;
+//     border-radius: 50%;
+//     height: 30px;
+//     width: 30px;
+//     background: $second-text-logo-color;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     box-sizing: border-box;
+//     display: block;
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     cursor: pointer;
+
+//     &:hover svg,
+//     &:focus svg {
+//       fill: $second-text-color;
+//     }
+
+//   }
+
+//   .modal__thunb{
+//     width: 11px;
+//     height: 11px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   .modal__heading{
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 20px;
+//     line-height: 1.15;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $p-text;
+//     margin-bottom: 12px;
+
+//     @media screen and (min-width: 480px) {    
+//       font-size: 20px;
+//       line-height: 1.5;
+//     }
+//   }
+
+//   .modal__list {
+//     display: flex;
+//     flex-direction: column;
+
+//     & .modal__item:not(:last-child) {
+//       margin-bottom: 10px;
+//     }
+//   }
+
+//   .modal__text{
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 12px;
+//     line-height: 1.16;
+//     letter-spacing: 0.01em;
+//     color: $p-text-color;
+//     margin-bottom: 4px;
+//     cursor: pointer;
+//   }
+
+//   .modal__item{
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+
+//     & input{
+//       margin: 0;
+//       padding: 14px 14px 14px 42px;
+//       font-family: Roboto;
+//       font-style: normal;
+//       font-weight: normal;
+//       font-size: 12px;
+//       line-height: 1.16;
+//       letter-spacing: 0.01em;
+//       border: 1px solid rgba(33, 33, 33, 0.2);
+//       box-sizing: border-box;
+//       border-radius: 4px;  
+//       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     & input::placeholder,
+//     & textarea::placeholder{
+//       font-family: Roboto;
+//       font-style: normal;
+//       font-weight: normal;
+//       font-size: 12px;
+//       line-height: 1.16;
+//       letter-spacing: 0.01em;
+//       color: rgba(117, 117, 117, 0.5);
+//     }
+
+//     & textarea {
+//       font-family: Roboto;
+//       font-style: normal;
+//       font-weight: normal;
+//       font-size: 14px;
+//       line-height: 1.14;
+//       padding: 12px 12px;
+//       letter-spacing: 0.01em;
+//       border: 1px solid rgba(33, 33, 33, 0.2);
+//       box-sizing: border-box;
+//       border-radius: 4px;
+//       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     &:hover input,
+//     &:hover textarea {
+//       border: 1px solid #2196F3;
+//       cursor: pointer;
+//     }
+
+//     &:focus input,
+//     &:focus textarea {
+//       border: 1px solid #2196F3;  
+//       cursor: pointer;
+//     }
+//   }
+
+//   .modal__send {
+//     background: #2196F3;  
+//     border-radius: 4px;
+//     border: #2196F3;
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 16px;
+//     line-height: 1.88;  
+//     letter-spacing: 0.06em;
+//     color: $second-text-logo-color;
+//     padding: 10px 56px;
+//     cursor: pointer;
+//     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+//     color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+//     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover{
+//       background: $hover-focus-color;
+//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     }
+//   }
+
+//   .modal__btn{
+//     text-align: center;
+//   }
+
+//   .policy {
+//     padding-top: 20px;
+//     padding-bottom: 30px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: flex;
+//     align-items: center;  
+//     cursor: pointer;
+
+//     & input[type="checkbox"] {
+//       width: 16px;
+//       height: 16px;
+//       border: 2px solid #212121;
+//       border-radius: 2px;
+//     }
+//   }
+
+//   .policy__label {
+//     display: flex;
+//     align-items: center;
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $p-text-color;
+//     margin-left: 8px;
+
+//     & a {
+//       color: $second-text-color;
+//       text-decoration: underline;
+//     }
+
+//     @media screen and (min-width: 480px) {
+//       margin-left: 0;
+//     }
+//   }
+
+//   .policy-text{
+
+//     @media screen and (min-width: 480px) {
+//       font-size: 12px;
+//     }
+//   }
+
+
+//   .modal__icon{
+//     position: absolute;
+//     top: 50%;
+//     left: 15px;
+//     transform: translateY(-0);
+//     display: inline-block;
+//     width: 15px;
+//     height: 15px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   .modal__form{
+//     height: 40px;
+//     padding: 0;
+//     margin: 0;
+
+//     &:focus ~ .modal__icon,
+//     &:hover ~ .modal__icon {
+//       fill: $hover-focus-color;
+//       cursor: pointer;  
+//     }
+//   }
+
+//   .modal__textarea{
+//     height: 120px;
+//   }
+
+//   .policy__checkbox {  
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;  
+//   }
+
+//   .policy-icon {
+//     display: inline-block;
+//     min-width: 16px;
+//     min-height: 16px;
+//     margin-right: 8px;
+//     border: 2px solid #212121;
+//     border-radius: 4px;
+
+//   }
+
+//   .policy__checkbox:checked + .policy-icon {
+//     border: transparent;
+//     background-image: url(../images/telegram.png);
+//     background-size: contain;
+//     background-origin: border-box;
+//   }

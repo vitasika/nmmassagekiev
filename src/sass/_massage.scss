@@ -5,7 +5,7 @@
 .massage-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    // justify-content: space-around;
     margin: -5px;
 }
 
@@ -25,8 +25,10 @@
 }
 
 .massage-item {
-    padding: 150px 10px 15px;
+    height: 360px;
+    padding: 10px 10px;
     display: flex;
+    justify-content: end;
     flex-direction: column;
 
     background-size: 100% 100%;
@@ -35,8 +37,8 @@
 
     @media screen and (max-width: 767px) {
         width: 100%;
-        height: 415px;
-        justify-content: end;
+        // height: 415px;
+        // justify-content: end;
 
         &:not(:last-child) {
             margin-bottom: 15px;
@@ -45,15 +47,15 @@
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 6 * 5px) / 3);
+        // height: 320px;
         margin: 5px;
-        justify-content: space-between;
     }
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 8 * 5px) / 4);
         margin: 5px;
-        height: 380px;
-    justify-content: end;
+        // height: 380px;
+    // justify-content: end;
 
     }
 }
@@ -100,56 +102,84 @@
 
 .massage1 {
     background-image: url(../images/massage/massage1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage2 {
     background-image: url(../images/massage/massage2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage3 {
     background-image: url(../images/massage/massage3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage4 {
     background-image: url(../images/massage/massage4.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage5 {
     background-image: url(../images/massage/massage5.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage6 {
     background-image: url(../images/massage/massage6.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage7 {
     background-image: url(../images/massage/massage7.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage8 {
     background-image: url(../images/massage/massage8.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage9 {
     background-image: url(../images/massage/massage9.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage10 {
     background-image: url(../images/massage/massage10.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage11 {
     background-image: url(../images/massage/massage11.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage12 {
     background-image: url(../images/massage/massage12.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage13 {
     background-image: url(../images/massage/massage13.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .massage14 {
     background-image: url(../images/massage/massage14.jpg);
+    background-size: cover;
+    background-position: center;
 }
