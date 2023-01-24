@@ -78,12 +78,18 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #000;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 
     @media screen and (min-width: 480px) {
         font-size: 20px;
         line-height: 1.5;
     }
+}
+
+.modal__position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal__list {
@@ -96,36 +102,13 @@
     }
 }
 
-.modal__send {
-    background: #2196f3;
-    border-radius: 4px;
-    border: #2196f3;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: #000;
-    padding: 10px 56px;
-    cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        background: #2196f3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+.modal__logo {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
 }
 
-.modal__icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-0);
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal_addres{
+    text-align: center;
+    margin-bottom: 25px;
 }
