@@ -17,6 +17,10 @@ body {
   background-color: var(--first-bg-color);
 }
 
+body.modal-open{
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

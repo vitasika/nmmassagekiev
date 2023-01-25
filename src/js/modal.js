@@ -23,4 +23,5 @@ closeModalBtn.addEventListener('click', toggleModal);
 
 function toggleModal() {
     modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('modal-open');
 }
