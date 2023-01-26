@@ -1,7 +1,6 @@
 .header-list {
     display: flex;
     justify-content: space-evenly;
-    // padding: 20px 0;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -30,10 +29,6 @@
 }
 
 .mobilmenu{
-    
-    @media screen and (max-width: 767px) {
-        
-    }
 
     @media screen and (min-width: 768px) {        
         display: none;
