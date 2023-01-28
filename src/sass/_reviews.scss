@@ -5,30 +5,49 @@
 }
 
 .reviews-discription{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 26px;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .revievs-slide{    
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: -5px;
+    
 }
 
-.revievs-item{
-    padding: 10px;
+.revievs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    padding: 30px;
     width: calc(100% - 6 * 5px) / 3;
     margin: 5px;
-    box-shadow: 0 24px 64px #0000001a;
-    border: solid 1px red;
+    box-shadow: 0 8px 14px #00000050, 0 -8px 14px #00000050;
+    // border: solid 1px red;
+    background-color: #f9f6f1;
+}
+
+
+.revievs-card::before{
+    content: "";
+    background-color: #0000;
+    border: 2px solid #E3B589;
+    position: absolute;
+    inset: 20px;
 }
 
 .revievs-star{
     width: 136px;
     height: 24px;
     background-image: url(../images/star.svg);
-    background-repeat: repeat-x;
+    background-repeat: space;
+    margin-bottom: 10px;
     
 
 }
@@ -36,17 +55,19 @@
 .revievs-names{
     margin: 15px 0;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
     text-transform: uppercase;
     color: #000;
 }
 
 .revievs-text{
+    font-size: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     max-height: 72px;
     line-height: 150%;
     color: gray;
+    margin-bottom: 10px;
 }
