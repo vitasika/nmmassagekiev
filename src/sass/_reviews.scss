@@ -1,3 +1,52 @@
+.reviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .reviews-discription{
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.revievs-slide{    
+    display: flex;
+    margin: -5px;
+}
+
+.revievs-item{
+    padding: 10px;
+    width: calc(100% - 6 * 5px) / 3;
+    margin: 5px;
+    box-shadow: 0 24px 64px #0000001a;
+    border: solid 1px red;
+    // background: #E3B589;
+    // color: black;
+}
+
+.revievs-star{
+    width: 136px;
+    height: 24px;
+    background-image: url(../images/favicon.png);
+    background-repeat: repeat-x;
+    // background-repeat: space;
+    
+
+}
+
+.revievs-names{
+    margin: 35px 0 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.revievs-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 72px;
+    line-height: 150%;
+    color: gray;
 }
