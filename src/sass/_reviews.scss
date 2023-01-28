@@ -1,6 +1,7 @@
 .reviews {
     padding-top: 80px;
     padding-bottom: 80px;
+    background-color: #fff;
 }
 
 .reviews-discription{
@@ -10,6 +11,8 @@
 
 .revievs-slide{    
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: -5px;
 }
 
@@ -19,8 +22,6 @@
     margin: 5px;
     box-shadow: 0 24px 64px #0000001a;
     border: solid 1px red;
-    // background: #E3B589;
-    // color: black;
 }
 
 .revievs-star{
@@ -28,13 +29,12 @@
     height: 24px;
     background-image: url(../images/star.svg);
     background-repeat: repeat-x;
-    // background-repeat: space;
     
 
 }
 
 .revievs-names{
-    margin: 35px 0 20px;
+    margin: 15px 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
