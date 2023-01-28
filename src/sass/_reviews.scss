@@ -1,10 +1,15 @@
 .reviews {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #fff;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
 
-.reviews-discription{
+.reviews-discription {
     font-size: 36px;
     font-weight: 700;
     line-height: 26px;
@@ -12,13 +17,21 @@
     margin-bottom: 40px;
 }
 
-.revievs-slide{    
+.revievs-list {
     display: flex;
+    flex-wrap: wrap;
     margin: -5px;
-    
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
-.revievs-card {
+// .revievs-item{
+    
+// }
+
+.revievs-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,15 +39,18 @@
     position: relative;
 
     padding: 30px;
-    width: calc(100% - 6 * 5px) / 3;
     margin: 5px;
     box-shadow: 0 8px 14px #00000050, 0 -8px 14px #00000050;
-    // border: solid 1px red;
+    border: solid 1px #000;
     background-color: #f9f6f1;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 6 * 5px) / 3);
+    }
 }
 
 
-.revievs-card::before{
+.revievs-item::before {
     content: "";
     background-color: #0000;
     border: 2px solid #E3B589;
@@ -42,32 +58,36 @@
     inset: 20px;
 }
 
-.revievs-star{
+.revievs-star {
     width: 136px;
     height: 24px;
     background-image: url(../images/star.svg);
     background-repeat: space;
-    margin-bottom: 10px;
-    
+    margin-bottom: 20px;
+
 
 }
 
-.revievs-names{
-    margin: 15px 0;
+.revievs-names {
+    margin-bottom: 20px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
     color: #000;
 }
 
-.revievs-text{
-    font-size: 10px;
+.revievs-text {
+    font-size: 11px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    max-height: 72px;
+    max-height: 69px;
     line-height: 150%;
     color: gray;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        // max-height: 76px;
+    }
 }
