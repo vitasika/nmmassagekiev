@@ -78,16 +78,15 @@
 }
 
 .revievs-text {
-    font-size: 11px;
+    font-size: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 69px;
+    max-height: 72px;
     line-height: 150%;
     color: gray;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1440px) {
         font-size: 12px;
-        // max-height: 76px;
     }
 }
