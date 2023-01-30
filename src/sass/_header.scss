@@ -16,12 +16,14 @@
     padding-top: 17px;
     padding-bottom: 17px;
 
-    color: #0b79c8;
+    color: #0b79c8;    
     
     font-weight: 700;
     font-size: 18px;
     line-height: 1.2;
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus{
         color: #000;
