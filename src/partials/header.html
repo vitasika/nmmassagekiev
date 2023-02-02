@@ -1,41 +1,46 @@
 <header class="header" id="block1">
-    <div class="container">
-        <nav class="header-nav">
+  <div class="container">
+    <nav class="header-nav">
+      <a href="./index.html" class="header-link">
+        <img src="./images/logo.png" alt="logo" class="header-logo" />
+      </a>
 
-            <a href="#block1" class="header-link">
-                <img src="./images/logo.png" alt="logo" class="header-logo">
-            </a>
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="44" height="44" aria-label="Переключатель мобильного меню">
+          <use class="icon-cross" href="./images/icomoon.svg#icon-cross"></use>
+          <use class="icon-menu" href="./images/icomoon.svg#icon-menu"></use>
+        </svg>
+      </button>
 
-            <button type="button" class="menu-button" aria-expanded="false"
-                aria-controls="menu-container" data-menu-button>
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-cross" href="./images/icomoon.svg#icon-cross"></use>
-                    <use class="icon-menu" href="./images/icomoon.svg#icon-menu"></use>
-                </svg>
-            </button>
-            
-            <ul class="header-list">
-                <li class="header-item">
-                    <a href="#block2" class="header-list__link">Про нас</a>
-                </li>
+      <div class="menu-container">Контеинер</div>
 
-                <li class="header-item">
-                    <a href="#block3" class="header-list__link">Майстри</a>
-                </li>
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#block2" class="header-list__link">Про нас</a>
+        </li>
 
-                <li class="header-item">
-                    <a href="#block4" class="header-list__link">Послуги</a>
-                </li>
+        <li class="header-item">
+          <a href="#block3" class="header-list__link">Майстри</a>
+        </li>
 
-                <li class="header-item">
-                    <a href="#block5" class="header-list__link">Відгуки</a>
-                </li>
+        <li class="header-item">
+          <a href="#block4" class="header-list__link">Послуги</a>
+        </li>
 
-                <li class="header-item">
-                    <a href="#block6" class="header-list__link">Контакти</a>
-                </li>
-            </ul>
+        <li class="header-item">
+          <a href="#block5" class="header-list__link">Відгуки</a>
+        </li>
 
-        </nav>
-    </div>
+        <li class="header-item">
+          <a href="#block6" class="header-list__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
