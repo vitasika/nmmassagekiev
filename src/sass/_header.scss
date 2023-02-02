@@ -1,6 +1,11 @@
-.header{
-    height: 60px;
+.header {
+    height: 80px;
 }
+
+.header-nav{
+    display: flex;
+}
+
 
 .header-list {
     display: flex;
@@ -34,9 +39,6 @@
     }
 }
 
-// .mobilmenu{
 
-//     @media screen and (min-width: 768px) {        
-//         display: none;
-//     }
-// }
+// Мобильное меню
+

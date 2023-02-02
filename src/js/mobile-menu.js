@@ -1,6 +1,7 @@
 
-const menuBtn = document.querySelector("[data-menu-button]")
- console.log(menuBtn)
+// const menuBtn = document.querySelector("[data-menu-button]")
+
+// console.log(menuBtn);
 
 // menuBtn.addEventListener("click", () => {
 //     menuBtn.classList.toggle("is-open")
