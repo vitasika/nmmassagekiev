@@ -5,9 +5,13 @@
 }
 
 .header-nav{
-    display: flex;    
+
+    @media screen and (max-width: 767px) {
+        display: flex;    
     align-items: center;
     justify-content: space-between;
+    }
+    
 }
 
 .header-link img{
@@ -18,13 +22,14 @@
 
 .header-list {
     display: flex;
-    justify-content: space-between;
 
     @media screen and (max-width: 767px) {
         display: none;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
+        
+    justify-content: space-between;
         align-items: center;
     }
 }
@@ -46,17 +51,18 @@
     &:hover, &:focus{
         color: #000;
     }
+
+
 }
 
-
-// Мобильное меню
-
-.menu-button{
-
+.header-link{
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
+
+
+// Мобильное меню
 
 .menu-button {
     display: inline-flex;
@@ -64,6 +70,10 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-button .icon-cross{
