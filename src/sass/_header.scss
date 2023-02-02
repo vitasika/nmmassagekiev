@@ -3,7 +3,14 @@
 }
 
 .header-nav{
-    display: flex;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: 46px;
+    height: 46px;
 }
 
 
