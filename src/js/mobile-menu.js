@@ -1,11 +1,11 @@
 
-// const menuBtn = document.querySelector("[data-menu-button]")
+const menuBtn = document.querySelector("[data-menu-button]")
 
-// console.log(menuBtn);
+console.log(menuBtn);
 
-// menuBtn.addEventListener("click", () => {
-//     menuBtn.classList.toggle("is-open")
-// })
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open")
+})
 
 
 // (() => {
