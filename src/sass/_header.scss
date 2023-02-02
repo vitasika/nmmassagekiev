@@ -1,5 +1,7 @@
 .header {
     height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .header-nav{
@@ -8,9 +10,9 @@
     justify-content: space-between;
 }
 
-.header-logo{
-    width: 46px;
-    height: 46px;
+.header-link img{
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -49,3 +51,29 @@
 
 // Мобильное меню
 
+.menu-button{
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-cross{
+    display: none;
+}
+
+.menu-button.is-open .icon-cross{
+    display: block;
+}
+
+.menu-button.is-open .icon-menu{
+    display: none;
+}
