@@ -1,5 +1,6 @@
 
-const menuBtn = document.querySelector("[data-menu-button]")
+const menuBtn = document.querySelector("[data-menu-button]");
+const mobileMenu = document.querySelector("[data-menu]");
 
 console.log(menuBtn);
 
@@ -7,8 +8,11 @@ menuBtn.addEventListener("click", () => {
     const expended = menuBtn.getAttribute("aria-expanded") === "true" || false;
 
     menuBtn.classList.toggle("is-open");
+
     menuBtn.setAttribute("aria-expanded", !expended);
     console.log(menuBtn);
+
+    mobileMenu.classList.toggle("is-open");
 
 })
 
