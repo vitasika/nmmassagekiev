@@ -1,21 +1,24 @@
 
 const menuBtn = document.querySelector("[data-menu-button]");
 const mobileMenu = document.querySelector("[data-menu]");
+const mobileMenuClosed = document.querySelector("[data-menu-closed]");
 
-console.log(menuBtn);
+console.log(mobileMenuClosed);
 
 menuBtn.addEventListener("click", () => {
-    const expended = menuBtn.getAttribute("aria-expanded") === "true" || false;
+    // const expended = menuBtn.getAttribute("aria-expanded") === "true" || false;
 
     menuBtn.classList.toggle("is-open");
 
-    menuBtn.setAttribute("aria-expanded", !expended);
-    console.log(menuBtn);
+    // menuBtn.setAttribute("aria-expanded", !expended);
 
     mobileMenu.classList.toggle("is-open");
 
 })
 
+mobileMenuClosed.addEventListener("click", () => {
+    mobileMenu.classList.remove("is-open");
+})
 
 // (() => {
 //     const mobileMenu = document.querySelector('.js-menu-container');
