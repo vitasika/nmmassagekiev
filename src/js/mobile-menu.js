@@ -10,6 +10,8 @@ menuBtn.addEventListener("click", () => {
 
     mobileMenu.classList.toggle("is-open");
 
+    document.body.classList.toggle('modal-open');
+
 })
 
 mobileMenuClosed.addEventListener("click", () => {
@@ -18,5 +20,7 @@ mobileMenuClosed.addEventListener("click", () => {
     menuBtn.setAttribute("aria-expanded", !expended);
 
     mobileMenu.classList.remove("is-open");
+
+    document.body.classList.remove('modal-open');
     
 })
