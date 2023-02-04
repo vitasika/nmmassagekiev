@@ -6,11 +6,11 @@ const mobileMenuClosed = document.querySelector("[data-menu-closed]");
 console.log(mobileMenuClosed);
 
 menuBtn.addEventListener("click", () => {
-    // const expended = menuBtn.getAttribute("aria-expanded") === "true" || false;
+    const expended = menuBtn.getAttribute("aria-expanded") === "true" || false;
 
     menuBtn.classList.toggle("is-open");
 
-    // menuBtn.setAttribute("aria-expanded", !expended);
+    menuBtn.setAttribute("aria-expanded", !expended);
 
     mobileMenu.classList.toggle("is-open");
 
@@ -18,6 +18,7 @@ menuBtn.addEventListener("click", () => {
 
 mobileMenuClosed.addEventListener("click", () => {
     mobileMenu.classList.remove("is-open");
+    menuBtn.classList.remove("is-open");
 })
 
 // (() => {
