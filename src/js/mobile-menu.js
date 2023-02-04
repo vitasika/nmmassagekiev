@@ -17,8 +17,14 @@ menuBtn.addEventListener("click", () => {
 })
 
 mobileMenuClosed.addEventListener("click", () => {
-    mobileMenu.classList.remove("is-open");
+    const expended = menuBtn.getAttribute("aria-expanded") === false || "true";
+
     menuBtn.classList.remove("is-open");
+
+    menuBtn.setAttribute("aria-expanded", !expended);
+
+    mobileMenu.classList.remove("is-open");
+    
 })
 
 // (() => {
