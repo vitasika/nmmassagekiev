@@ -1,0 +1,2 @@
+const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),s=document.querySelector("[data-menu-closed]");console.log(s),e.addEventListener("click",(()=>{const s="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!s),t.classList.toggle("is-open")})),s.addEventListener("click",(()=>{const s=!1===e.getAttribute("aria-expanded")||"true";e.classList.remove("is-open"),e.setAttribute("aria-expanded",!s),t.classList.remove("is-open")}));
+//# sourceMappingURL=index.cb2ec681.js.map
