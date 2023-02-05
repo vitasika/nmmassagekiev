@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://vitasika.github.io/nmmassagekiev_new",
+  "homepage": "https://vitasika.github.io/nmmassagekiev",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /nmmassagekiev_new/"
+    "build": "parcel build src/*.html --public-url /nmmassagekiev/"
   },
   "repository": {
     "type": "git",
