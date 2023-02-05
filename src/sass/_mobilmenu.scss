@@ -24,20 +24,12 @@
         background-color: var(--first-bg-color);
         border-top: 2px solid #bbb;
     }
-
-    // @media screen and (min-width: 768px) {
-    //     & ul {
-    //         display: flex;
-    //         flex-grow: 1;
-    //     }
-    // }
 }
 
 .menu-button {
     display: inline-flex;
     margin: 0;
     padding: 0;
-    // border: none;
     background-color: transparent;
     fill: var(--btn-bg-color);
     border: 3px solid var(--btn-bg-color);
