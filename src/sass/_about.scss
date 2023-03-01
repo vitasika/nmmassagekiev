@@ -67,8 +67,6 @@
 
 
     @media screen and (min-width: 320px) {
-        // display: flex;
-        // flex-direction: column;
         margin-bottom: 20px;
     }
 
@@ -83,7 +81,6 @@
 
     @media screen and (min-width: 1280px) {
         width: 380px;
-        // height: 650px;
     }
 }
 
@@ -135,7 +132,6 @@
     line-height: 1.2;
     display: inline-block;
     margin-bottom: 10px;
-    // border-radius: 0px;
     color: var(--second-text-color);
     background-color: var(--btn-bg-color);
     animation-name: pink-icons;
